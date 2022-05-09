@@ -52,7 +52,7 @@ namespace NLayer.Service.Services
         public async Task<T> GetByIdAsync(int id)
         {
            var hasData = await _repository.GetByIdAsync(id);
-            if (hasData == null) { throw new NotFoundException($"{typeof(T).Name} is not found"); }
+            if (hasData == null) { throw new NotFoundException($"{typeof(T).Name}({id}) not found"); }
             return hasData;
         }
 
