@@ -1,13 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NLayer.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace NLayer.Repository.Seeds 
+namespace NLayer.Repository.Seeds
 {
     internal class ProductSeed : IEntityTypeConfiguration<Product>
     {
@@ -19,7 +14,7 @@ namespace NLayer.Repository.Seeds
                 CategoryId = 1,
                 Price = 100,
                 Stock = 20,
-                Name="Kalem 1",
+                Name = "Kalem 1",
                 CreatedDate = DateTime.Now
             },
             new Product
@@ -58,7 +53,7 @@ namespace NLayer.Repository.Seeds
                  Name = "Kitap 2",
                  CreatedDate = DateTime.Now
              });
-           
+
 
         }
     }
